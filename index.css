@@ -1,0 +1,213 @@
+body {
+    font-size: 16px;
+    font-family: 'Outfit';
+    font-weight: 400;
+    background-color: hsl(30, 54%, 90%);
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif';
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+li {
+    list-style: square;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+article {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    margin: 85px auto;
+    padding: 35px;
+    max-width: 45%;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+h1 {
+    font-family: 'Young Serif';
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Section Preparation-time */
+
+.preparation-time {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.preparation-time p {
+    color: hsl(332, 51%, 32%);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.preparation-time ul {
+    margin: 0;
+    padding-left: 25px;
+}
+
+
+.preparation-time li {
+    padding: 5px 10px;
+}
+
+.preparation-time li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation-time li span{
+    font-weight: bold;
+}
+
+/* Section Preparation-time End */
+
+/* Section Ingredients */
+
+.ingredients {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.ingredients ul {
+    padding: 0px 25px;
+    margin: 20px 0;
+}
+
+.ingredients li {
+ padding: 6px 15px;
+ margin: 0;
+}
+
+
+.instructions {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.instructions ul {
+    padding: 0 0 0 25px;
+    margin: 20px 0;
+}
+
+.instructions li {
+ padding: 6px 0 6px 15px;
+ margin: 0;
+ list-style: decimal;
+}
+
+.instructions li::marker {
+    font-weight: 700;
+}
+
+.instructions li span {
+    font-weight: bold;
+}
+
+/* Section Ingredients End */
+
+/* Section Nutrition */
+
+.nutrition{
+    margin-top: 25px;
+}
+
+.nutrition ul {
+    padding: 0;
+}
+    
+.nutrition li {
+    list-style: none;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 15px 30px;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nutrition li span {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+}
+
+/* Section Nutrition End */
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    article {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .introduction,
+    section,
+    h1 {
+        padding: 0;
+        margin: 30px;
+    }
+
+    .preparation-time {
+        padding: 20px;
+        margin: 30px;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    img {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+}
