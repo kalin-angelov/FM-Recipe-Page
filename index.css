@@ -39,7 +39,7 @@ figure {
 
 img {
     max-width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 h1 {
@@ -135,10 +135,6 @@ p {
 /* Section Ingredients End */
 
 /* Section Nutrition */
-
-.nutrition{
-    margin-top: 25px;
-}
 
 .nutrition ul {
     padding: 0;
